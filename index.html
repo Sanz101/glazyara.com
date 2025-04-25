@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  
+  <!-- jQuery (required for floating-wpp.js) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- floating-wpp CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.css" />
+
+<!-- floating-wpp JS -->
+<script src="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.js"></script>
+
+  
   <link rel="icon" href="Untitled design (13).png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,9 +21,25 @@
 </head>
 <body>
 
-<a href="https://wa.me/94777502130?text=Hi%20Glazyara%20Entertainment%2C%20I%27m%20interested%20in%20your%20services" class="whatsapp-float" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat with us on WhatsApp" />
-</a>
+  <div id="whatsapp-button"></div>
+
+
+<script>
+  $(function () {
+    $('#whatsapp-button').floatingWhatsApp({
+      phone: '94777502130', // Your WhatsApp number (no + or spaces)
+      popupMessage: 'Hi! How can we help you?',
+      showPopup: true,
+      message: "I'm interested in your services.",
+      showOnIE: false,
+      headerTitle: 'Chat with us on WhatsApp!',
+      headerColor: '#25D366',
+      backgroundColor: '#25D366',
+      buttonImage: '<img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" />'
+    });
+  });
+</script>
+
 
 
 

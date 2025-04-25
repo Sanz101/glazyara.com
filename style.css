@@ -255,6 +255,29 @@ main.content {
   }
 }
 
+/* Floating WhatsApp button styles */
+.floating-wpp {
+  z-index: 9999 !important;
+}
+
+.floating-wpp .floating-wpp-button {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.floating-wpp .floating-wpp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: Smooth the popup */
+.floating-wpp .floating-wpp-popup {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Icon size override if needed */
 .floating-wpp .floating-wpp-button img {
   width: 48px !important;
   height: auto !important;

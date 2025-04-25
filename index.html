@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  
-  <!-- jQuery (required for floating-wpp.js) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- floating-wpp CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.css" />
-
-<!-- floating-wpp JS -->
-<script src="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.js"></script>
-
   
   <link rel="icon" href="Untitled design (13).png" type="image/png">
   <meta charset="UTF-8" />
@@ -21,16 +10,26 @@
 </head>
 <body>
 
-  <div id="whatsapp-button"></div>
+  <!-- WhatsApp Button Container -->
+<div id="whatsapp-button"></div>
 
+<!-- jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- floating-wpp CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.css" />
+
+<!-- floating-wpp JS -->
+<script src="https://cdn.jsdelivr.net/npm/floating-whatsapp/floating-wpp.min.js"></script>
+
+<!-- Initialize WhatsApp Button -->
 <script>
   $(function () {
     $('#whatsapp-button').floatingWhatsApp({
-      phone: '94777502130',
+      phone: '94777502130', // Your number: 94 = Sri Lanka, then your mobile without leading 0
       popupMessage: 'Hi! How can we help you?',
-      showPopup: true,
       message: "I'm interested in your services.",
+      showPopup: true,
       showOnIE: false,
       headerTitle: 'Chat with us on WhatsApp!',
       headerColor: '#25D366',
@@ -39,9 +38,6 @@
     });
   });
 </script>
-
-
-buttonImage: '<img src="https://img.icons8.com/3d-fluency/94/whatsapp.png" style="width: 48px;" />'
 
 
 
